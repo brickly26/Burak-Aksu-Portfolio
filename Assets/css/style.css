@@ -30,13 +30,23 @@ nav {
     margin: 0px;
     text-align: center;
     padding: 15px;
-
+    justify-content: space-evenly;
+}
+a {
+    padding: 6px;
 }
 ul {
     display: flex;
     align-items: flex-end;
 }
-
+h2 {
+    margin: 0;
+    text-align: center;
+    background-color: sandybrown;
+    color: white;
+    box-sizing: border-box;
+    padding: 13px;
+}
 .aboutMe {
     display: flex;
     flex-direction: column;
@@ -46,20 +56,56 @@ ul {
 
 .work {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 75px;
+
+}
+#projectImg {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    margin: 0;
+    padding: 2px;
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white
+}
+
+div {
+    border: 5px plum solid;
+}
+
+div:hover {
+    border: 7px purple solid;
 }
 
 .contactMe {
     display: flex;
-    flex-direction: column;
+    margin: 25px;
     align-items: center;
     justify-content: center;
 }
 
 ul {
     display: flex;
-    align-items: space-between;
-    justify-content: center;
+    align-items: space-evenly;
+    list-style-type: none;
 }
+
+li {
+    display: block;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+
+    }
+  }
