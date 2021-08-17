@@ -1,111 +1,151 @@
-body{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-#profilePic {
-    width: 100px;
-    height: 100px;
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    background-color: cornflowerblue;
+  display: flex;
+  background-color: darkolivegreen;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+}
 
+#profile {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 90px;
+  border-radius: 15px;
 }
 
 h1 {
-    background-color:sandybrown;
-    color: white;
-    margin-left: 50px;
-    padding: 10px;
+  margin-left: 15px;
+  color: white;
 }
 
 nav {
-    display: flex;
-    background-color: thistle;
-    margin: 0px;
-    text-align: center;
-    padding: 15px;
-    justify-content: space-evenly;
-}
-a {
-    padding: 6px;
-}
-ul {
-    display: flex;
-    align-items: flex-end;
-}
-h2 {
-    margin: 0;
-    text-align: center;
-    background-color: sandybrown;
-    color: white;
-    box-sizing: border-box;
-    padding: 13px;
-}
-.aboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.work {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 75px;
-
-}
-#projectImg {
-    width: 200px;
-    height: 200px;
-}
-
-footer {
-    margin: 0;
-    padding: 2px;
-    background-color: cornflowerblue;
-    text-align: center;
-    color: white
-}
-
-div {
-    border: 5px plum solid;
-}
-
-div:hover {
-    border: 7px purple solid;
-}
-
-.contactMe {
-    display: flex;
-    margin: 25px;
-    align-items: center;
-    justify-content: center;
+  background-color:olive;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 55px;
 }
 
 ul {
-    display: flex;
-    align-items: space-evenly;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 40%;
+  margin-right: 25px;
 }
+
 
 li {
-    display: block;
-    padding: 15px 30px;
-    box-sizing: border-box;
-    background-color: cornflowerblue;
-    color: white;
+  box-shadow: 9px 5px 0.4em black;
+  border-radius: 5px;
+  padding: 5px; 
+  cursor: pointer;
+  background-color: #a2a200;
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-      flex-direction: column;
+li:hover {
+  background-color: whitesmoke;
+  color: olive
+}
 
-    }
-  }
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-cards {
+  display: flex;
+
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-top: 5%;
+  width: 84%;
+  border-radius: 15px;
+  box-shadow: 6px 6px 20px #0000008f;
+  border: 2px solid olive;
+  padding: 20px;
+}
+
+.cards1 {
+  display: flex;
+  align-items: flex-end;
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  border-radius: 15px;
+  border: 3px solid darksalmon;
+}
+
+#about-me {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#work {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards {
+  background-size: cover;
+  border-radius: 15px;
+  border: 3px solid darksalmon;
+}
+
+#main-project {
+  width: 90%;
+  height: 250px;
+  margin: 5%
+}
+
+#project-1 {
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../images/STKR.png);
+  background-size: cover;
+}
+
+h4 {
+  width: 100%;
+  border-radius: 0px 0px 11px 11px;
+  color: whitesmoke;
+  background-color: darksalmon;
+  text-align: center;
+}
+
+#projects {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 250px;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#contact-me {
+  display: flex;
+}
+
+#cont {
+  width: 20%;
+}
+
+#info {
+  width: 80%;
+}
+

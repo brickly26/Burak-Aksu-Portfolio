@@ -4,53 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burak Aksu</title>
     <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <img id=profilePic src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/13/1490989105-twitter1.jpg?resize=768:*" alt="Picture of Burak Aksu">
+        <img id="profile" src="https://i.pinimg.com/474x/9b/47/a0/9b47a023caf29f113237d61170f34ad9.jpg" alt="profile pic">
         <h1>Burak Aksu</h1>
     </header>
     <nav>
-        <a href="#">AboutMe</a>
-        <a href="#">Work</a>
-        <a href="#">Contact Me</a>
+        <ul>
+            <a href="#about-me">
+                <li>About Me</li>
+            </a>
+            <a href="#work">
+                <li>My Projects</li>
+            </a>
+            <a href="#contact-me">
+                <li>Contact Me</li>
+            </a>
+            <a href="https://github.com/brickly26">
+                <li>Github</li>
+            </a>
+        </ul>
     </nav>
-    <section>
-        <h2>About Me</h2>
-        <article class=aboutMe>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque doloremque repellendus esse assumenda enim totam mollitia officia, odio sequi labore. Quae quo dolorem sapiente cupiditate odio natus dignissimos corrupti pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, dignissimos laborum asperiores voluptatem, maxime autem adipisci porro cumque deleniti consequatur neque voluptas inventore doloribus, natus magni facere cupiditate fugiat nobis!</p>
-        </article>
-        <h2>Work</h2>
-        <article class=work>
-            <div class=project1>
-                <img id=projectImg src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tech related photo number 1">
-                <footer>Project 1</footer>
+    <main>
+        <section class="section-cards" id="about-me">
+            <div class="title">
+                <h2>About Me</h2>
             </div>
-            <div class=project2>
-                <img id=projectImg src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt="Tech related photo number 2">
-                <footer>Project 2</footer>
+            <div id="body">
+                <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit distinctio harum repellendus iusto temporibus ipsa, odit sunt molestiae tempore? Nisi porro ea repellat nulla voluptates, ex quibusdam? Amet, beatae reprehenderit!
+                </p>
             </div>
-            <div class=project3>
-                <img id=projectImg src="https://images.unsplash.com/photo-1609705024873-7add858e3036?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tech related photo number 3">
-                <footer>Project 3</footer>
+        </section>
+        <section class="section-cards" id="work">
+            <div class="title">
+                <h2>My Projects</h2>
             </div>
-        </article>
-        <h2>Contact Me</h2>
-        <article class=contactMe>
-            <ul>
-                <li>
-                    1-(516)-769-1846
-                </li>
-                <li>
-                    Sabburak26@gmail.com
-                </li>
-                <li>
-                    <a href="https://github.com/brickly26">Github</a>
-                </li>
-            </ul>
-        </article>
-    </section>
+            <div id="main-project">
+                <a href="https://naf15.github.io/STKR/">
+                    <div class="cards" id="project-1">
+                        <h4>SKTR</h4>
+                    </div>
+                </a>
+            </div>
+            <div id="projects">
+                <a href="">
+                    <div class="cards1" id="project-2">
+                        <h4>Project 2</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cards1" id="project-3">
+                        <h4>Project 3</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cards1" id="projects-4">
+                        <h4>Project 4</h4>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="section-cards" id="contact-me">
+            <div class="title" id="cont">
+                <h2>Contact Me</h2>
+            </div>
+            <div id="info">
+                <span>1-(516)-784-6991</span>
+                <span>SabBurak26@gmail.com</span>
+                <a href="https://github.com/brickly26" id="gitinfo">Github</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
