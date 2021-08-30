@@ -12,6 +12,22 @@ header {
   align-items: center;
 }
 
+p {
+  margin: 20px;
+  font-size: larger;
+  
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: rgb(21, 135, 160) solid 5px;
+}
+
 #profile {
   margin-left: 15px;
   margin-right: 15px;

@@ -2,27 +2,18 @@
 
 ## Description
 
-In this project I have created a portfolio website that displays my current project, information about me, my github repository, and my contact information.
+In this assignment we updated our existing portfolio page to include our most recent projects and a profile picture of myself.
 
 ## Table of Contents
 
 - [Image](#Image)
-- [Installation/Usage](#Installation/Usage)
-- [Usage](#Usage)
 - [Creator](#Creator)
 
 ## Image
 
-This is a video showing the program taking user input and converting it to a html page with that information.
+This is a image that previews my portfolio website.
 
-![This is a video showing the program taking user input and converting it to a html page with that information.](./Assets/vid1.gif)
-## Installation/Usage
-
-- Clone the repo on to you own machine
-- Type "npm i" to install the node packages required for this program to work
-- Type the "npm start" command to start the programm
-- Follow the prompts and answer the questions
-- Just like that you have a html file with a team youve created
+![This is a image that previews my portfolio website.](./Assets/images/mock.png)
 
 ## Creator
 
