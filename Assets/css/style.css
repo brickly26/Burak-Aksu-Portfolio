@@ -6,7 +6,7 @@
 
 header {
   display: flex;
-  background-color: darkolivegreen;
+  background-color: rgb(14, 96, 114);
   width: 100%;
   height: 100px;
   align-items: center;
@@ -25,7 +25,7 @@ h1 {
 }
 
 nav {
-  background-color:olive;
+  background-color:rgb(21, 135, 160);
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -34,25 +34,33 @@ nav {
 
 ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
   list-style: none;
-  width: 40%;
-  margin-right: 25px;
+  height: 100%;
 }
 
 
 li {
-  box-shadow: 9px 5px 0.4em black;
-  border-radius: 5px;
-  padding: 5px; 
+  padding: 20px; 
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  background-color: #a2a200;
+  height: 100%;
+  width: 100%;
 }
 
 li:hover {
   background-color: whitesmoke;
-  color: olive
+  color: rgb(21, 135, 160);
+}
+
+.nav-project {
+  background-color:darkslategrey;
+}
+
+.nav_project:hover {
+  background-color: rgb(21, 135, 160);
+  color: whitesmoke;
 }
 
 a {
@@ -75,18 +83,27 @@ main {
   width: 84%;
   border-radius: 15px;
   box-shadow: 6px 6px 20px #0000008f;
-  border: 2px solid olive;
+  border: 2px solid rgb(14, 96, 114);
   padding: 20px;
 }
 
 .cards1 {
   display: flex;
+  margin: 25px;
   align-items: flex-end;
   height: 250px;
   width: 250px;
   background-size: cover;
   border-radius: 15px;
-  border: 3px solid darksalmon;
+  border: 3px solid rgb(14, 96, 114);
+}
+
+.cards1:hover {
+  border: 4px solid rgb(21, 135, 160);
+}
+
+.cards1:hover #p2-title {
+  background-color: rgb(21, 135, 160);
 }
 
 #about-me {
@@ -102,13 +119,21 @@ main {
 .cards {
   background-size: cover;
   border-radius: 15px;
-  border: 3px solid darksalmon;
+  border: 3px solid rgb(14, 96, 114);
 }
 
 #main-project {
   width: 90%;
   height: 250px;
   margin: 5%
+}
+
+.cards:hover {
+  border: 4px solid rgb(21, 135, 160);
+}
+
+.cards:hover #p1-title {
+  background-color: rgb(21, 135, 160);
 }
 
 #project-1 {
@@ -123,29 +148,91 @@ h4 {
   width: 100%;
   border-radius: 0px 0px 11px 11px;
   color: whitesmoke;
-  background-color: darksalmon;
+  background-color: rgb(14, 96, 114);
   text-align: center;
 }
 
 #projects {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 90%;
-  height: 250px;
   margin-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
+
+#project-2 {
+  background-image: url(../images/Parker-app-map.png);
+  background-size: cover;
+}
+
+#project-3 {
+  background-image: url(../images/tech1.jpeg);
+  background-size: cover;
+}
+
+#project-4 {
+  background-image: url(../images/tech3.jpeg);
+  background-size: cover;
+}
+
 #contact-me {
   display: flex;
+  margin-top: 5%;
+  height: 75px;
+  width: 100%;
+  background-color:rgb(21, 135, 160);
+  color: white;
 }
 
 #cont {
   width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color:darkslategrey;
 }
 
 #info {
   width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    height: 232px;
+    justify-content: flex-start;
+  }
+
+  ul {
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+    margin-top: 175px
+  }
+  
+  li {
+    display: block;
+  }
+
+  #contact-me {
+    flex-direction: column;
+    height: 150px;
+  }
+
+  #cont {
+    height: 75px;
+    width: 100%;
+  }
+
+  #info {
+    height: 75px;
+    width: 100%;
+  }
 }
 
