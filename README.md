@@ -13,7 +13,7 @@ In this assignment we updated our existing portfolio page to include our most re
 
 This is a image that previews my portfolio website.
 
-![This is a image that previews my portfolio website.](./Assets/images/mock.png)
+![This is a image that previews my portfolio website.](./assets/images/mock.png)
 
 ## Creator
 
